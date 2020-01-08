@@ -15,4 +15,5 @@ namespace Address
 	const unsigned int PLAYER_RING_SLOT = 0x007B0190;
 	const unsigned int PLAYER_ARROW_SLOT = 0x007B0170;
 	const unsigned int PLAYER_ARROW_COUNT = 0x007B016C;
+
 }
