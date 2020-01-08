@@ -8,9 +8,9 @@
 DWORD process_id;
 DWORD process_base_address;
 
-DWORD XOR_ADDRESS = 0x570458;
-DWORD PLAYER_HEALTH_ADDRESS = 0x70E000;
-DWORD PLAYER_MANA_ADDRESS = 0x57048C;
+const unsigned int XOR_ADDRESS = 0x570458;
+const unsigned int PLAYER_HEALTH_ADDRESS = 0x70E000;
+const unsigned int PLAYER_MANA_ADDRESS = 0x57048C;
 
 
 int xor_key = 0;
@@ -42,7 +42,6 @@ DWORD getModuleBaseAddress(DWORD procId, const wchar_t* modName)
 	return modBaseAddr;
 }
 
-
 int main()
 {
 	HWND hWnd = FindWindowA(NULL, ("Tibia - Jan Palony"));
@@ -69,7 +68,26 @@ int main()
 		return 0;
 	}
 
-	process_base_address = getModuleBaseAddress(process_id, L"Qt5Widgets.dll");
+	process_base_address = getModuleBaseAddress(process_id, L"Tibia.exe");
+	
+	while (!GetAsyncKeyState(VK_ESCAPE))
+	{
+		ReadProcessMemory(pHandle, (LPVOID)(XOR_ADDRESS + process_base_address), &xor_key, sizeof(xor_key), NULL);
+		ReadProcessMemory(pHandle, (LPVOID)(PLAYER_MANA_ADDRESS + process_base_address), &player_mana, sizeof(player_mana), NULL);
+		ReadProcessMemory(pHandle, (LPVOID)(PLAYER_HEALTH_ADDRESS + process_base_address), &player_health, sizeof(player_health), NULL);
+		
+		std::dec;
+		system("cls");
+		
+		std::cout << "Player health: " << (player_health ^ xor_key) << "\n";
+		std::cout << "Player mana: " << (player_mana ^ xor_key) << "\n";
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+	}
+
+	CloseHandle(pHandle);
+	system("Pause");
+	return 0;
 
 	//UINT_PTR addr = (UINT_PTR)GetModuleHandle(L"Qt5Widgets.dll"); //+ 0x41BE74 + 0x28 + 0x10 + 0x0 + 0x1AC + 0x40 + 0x44;
 	//ReadProcessMemory(pHandle, (void*)addr, &player_mana, sizeof(player_mana), 0);
@@ -85,7 +103,7 @@ int main()
 	//std::cout << process_base_address << "\n";
 	/*std::cout << (player_health ^ xor_key) << "\n";*/
 
-	
+
 	/*DWORD offset1, offset2, offset3, offset4, offset5, offset6, offset7;
 	ReadProcessMemory(pHandle, (LPCVOID)(process_base_address + 0x0041BE74), &offset1, sizeof(offset1), NULL);
 	std::cout << "Offset1: " << std::hex << offset1 << "\n";
@@ -101,7 +119,7 @@ int main()
 	std::cout << "Offset6: " << std::hex << offset6 << "\n";
 	PLAYER_MANA_ADDRESS = offset6 + 0x44;*/
 
-	/* Finding mana adress */
+	/*
 	std::vector<DWORD> mana_offsets = { 0x0041BE74, 0x28, 0x10, 0x0, 0x1AC, 0x40 };
 	ReadProcessMemory(pHandle, (LPCVOID)(process_base_address + 0x0041BE74), &mana_offsets[0], sizeof(DWORD), NULL);
 	for (size_t i = 1; i < mana_offsets.size(); i++)
@@ -110,7 +128,6 @@ int main()
 	}
 	PLAYER_MANA_ADDRESS = mana_offsets[mana_offsets.size() - 1] + 0x44;
 
-	/* Finding health adress */
 	std::vector<DWORD> health_offsets = { 0x0041BE74, 0x28, 0x10, 0x0, 0x1AC, 0x40 };
 	ReadProcessMemory(pHandle, (LPCVOID)(process_base_address + 0x0041BE74), &health_offsets[0], sizeof(DWORD), NULL);
 	for (size_t i = 1; i < health_offsets.size(); i++)
@@ -118,20 +135,6 @@ int main()
 		ReadProcessMemory(pHandle, (LPCVOID)(health_offsets[i - 1] + health_offsets[i]), &health_offsets[i], sizeof(DWORD), NULL);
 	}
 	PLAYER_HEALTH_ADDRESS = health_offsets[health_offsets.size() - 1] + 0x3C;
-
-	while (true)
-	{
-		ReadProcessMemory(pHandle, (LPVOID)(PLAYER_MANA_ADDRESS), &player_mana, sizeof(player_mana), NULL);
-		ReadProcessMemory(pHandle, (LPVOID)(PLAYER_HEALTH_ADDRESS), &player_health, sizeof(player_health), NULL);
-		std::dec;
-
-		std::cout << "Player mana: " << player_mana << "\n";
-		std::cout << "Player health: " << player_health << "\n";
-		std::this_thread::sleep_for(std::chrono::milliseconds(400));
-	}
-
-	CloseHandle(pHandle);
-	system("Pause");
-	return 0;
+	*/
 }
 
