@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="27">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"XOR"</Description>
+      <LastState Value="1307705330" RealAddress="010A0458"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe +0x570458</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"Player_variables"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"Health"</Description>
+          <LastState Value="1307704764" RealAddress="0123E000"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe + 70E000</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Max Health"</Description>
+          <LastState Value="1307704764" RealAddress="0123E048"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe + 0x70E048</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Mana"</Description>
+          <LastState Value="1307705267" RealAddress="010A048C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+57048C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Max Mana"</Description>
+          <LastState Value="1307705107" RealAddress="010A045C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe + 0x57045C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"Cap"</Description>
+          <LastState Value="1307676986" RealAddress="0123E040"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E040</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Exp"</Description>
+          <LastState Value="624025" RealAddress="010A0460"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe + 0x570460</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"Level"</Description>
+          <LastState Value="35" RealAddress="010A0470"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe + 0x570470</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"Speed"</Description>
+          <LastState Value="154" RealAddress="010A0418"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+570418</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>25</ID>
+      <Description>"Player_equipment"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Player_head_ID"</Description>
+          <LastState Value="3351" RealAddress="012E0290"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0290</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"Player_chest_ID"</Description>
+          <LastState Value="3357" RealAddress="012E0230"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0230</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"Player_legs_ID"</Description>
+          <LastState Value="3557" RealAddress="012E01D0"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B01D0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"Player_boots_ID"</Description>
+          <LastState Value="3552" RealAddress="012E01B0"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B01B0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Player_neck_ID"</Description>
+          <LastState Value="3572" RealAddress="012E0270"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0270</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"Player_backpack_ID"</Description>
+          <LastState Value="2854" RealAddress="012E0250"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0250</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Player_righthand_ID"</Description>
+          <LastState Value="3317" RealAddress="012E01F0"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B01F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"Player_lefthand_ID"</Description>
+          <LastState Value="3425" RealAddress="012E0210"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0210</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"Player_ring_ID"</Description>
+          <LastState Value="0" RealAddress="012E0190"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0190</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"Player_ammo_ID"</Description>
+          <LastState Value="0" RealAddress="012E0170"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B0170</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>32</ID>
+          <Description>"Player_ammo_COUNT"</Description>
+          <LastState Value="0" RealAddress="012E016C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+7B016C</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>33</ID>
+      <Description>"Player_stats"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Level_MAGIC"</Description>
+          <LastState Value="5" RealAddress="010A0478"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+570478</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"Level_FIST"</Description>
+          <LastState Value="31" RealAddress="0123E00C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E00C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"Level_CLUB"</Description>
+          <LastState Value="31" RealAddress="0123E010"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E010</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"Level_SWORD"</Description>
+          <LastState Value="30" RealAddress="0123E014"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E014</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"Level_AXE"</Description>
+          <LastState Value="86" RealAddress="0123E018"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E018</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"Level_DIST"</Description>
+          <LastState Value="10" RealAddress="0123E01C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E01C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"Level_SHIELD"</Description>
+          <LastState Value="84" RealAddress="0123E020"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>Tibia.exe+70E020</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Is logged in"</Description>
+      <LastState Value="31" RealAddress="010A05E4"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe +0X5705E4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"PlayerXPos"</Description>
+      <LastState Value="32336" RealAddress="0123E054"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+70E054</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"PlayerYPos"</Description>
+      <LastState Value="31783" RealAddress="0123E058"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+70E058</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"PlayerZPos"</Description>
+      <LastState Value="7" RealAddress="0123E05C"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+70E05C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>15</ID>
+      <Description>"PlayerGotoX"</Description>
+      <LastState Value="32336" RealAddress="010B1F9C"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+581F9C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"PlayerGotoY"</Description>
+      <LastState Value="31783" RealAddress="0123E044"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+70E044</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"BattleStance"</Description>
+      <LastState Value="1" RealAddress="010B16F4"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Tibia.exe+5816F4</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
